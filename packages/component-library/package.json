@@ -1,0 +1,16 @@
+{
+  "name": "@taskbox/component-library",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "peerDependencies": {
+    "react": "16.13.1",
+    "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "18.1.0",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "7.20.0"
+  }
+}

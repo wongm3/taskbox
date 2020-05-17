@@ -1,0 +1,7 @@
+{
+  "hooks": {
+    "pre-commit": "lint-staged",
+    "commit-msg": "yarn devmoji -e --lint",
+    "post-rewrite": "yarn devmoji -e --lint"
+  }
+}
