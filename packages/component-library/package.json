@@ -5,11 +5,11 @@
   "typings": "lib/cjs/index.d.ts",
   "module": "lib/esm/index.js",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "build": "yarn build:cjs && yarn build:esm",
     "build:cjs": "tsc",
-    "build:esm": "tsc -m es6 --outDir lib/esm"
+    "build:esm": "tsc -m es6 --outDir lib/esm",
+    "build:tailwind": "postcss src/tailwind.css -o src/assets/index.css"
   },
   "peerDependencies": {
     "@types/react": "^16.9.35",
@@ -17,6 +17,10 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "tailwindcss": "^1.4.6",
     "typescript": "^3.9.2"
+  },
+  "dependencies": {
+    "postcss-cli": "^7.1.1"
   }
 }
