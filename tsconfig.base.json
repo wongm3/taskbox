@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "commonjs",
+    "allowJs": false,
+    "declaration": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es6",
+    "sourceMap": true,
+    "lib": ["es5", "es6", "es7", "es2017", "dom"],
+    "noErrorTruncation": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@taskbox/*": ["packages/*/src"]
+    }
+  },
+  "include": ["packages/*/src"],
+  "exclude": ["node_modules"]
+}
